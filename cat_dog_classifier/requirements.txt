@@ -1,0 +1,12 @@
+tensorflow>=2.16,<2.18
+keras>=3.0,<3.3
+numpy>=1.26,<2.0
+pandas>=2.2,<3.0
+matplotlib>=3.8,<3.9
+seaborn>=0.13,<0.14
+pillow>=10.3,<11.0
+opencv-python>=4.10,<5.0
+scikit-learn>=1.4,<1.6
+jupyterlab>=4.2,<5.0
+ipykernel>=6.29,<7.0
+streamlit>=1.35,<2.0

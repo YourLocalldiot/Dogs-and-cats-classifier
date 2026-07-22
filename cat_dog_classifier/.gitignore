@@ -1,0 +1,37 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# TensorFlow / Keras artifacts
+*.keras
+*.h5
+*.pb
+*.tflite
+checkpoint
+checkpoints/
+
+# Model and data artifacts
+models/
+*.npy
+*.pkl
+
+# Streamlit and secrets
+.streamlit/
+.env
+
+# VS Code settings
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
