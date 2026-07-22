@@ -13,7 +13,6 @@ ENV/
 .ipynb_checkpoints/
 
 # TensorFlow / Keras artifacts
-*.keras
 *.h5
 *.pb
 *.tflite
@@ -21,8 +20,6 @@ checkpoint
 checkpoints/
 
 # Model and data artifacts
-models/
-*.npy
 *.pkl
 
 # Streamlit and secrets
