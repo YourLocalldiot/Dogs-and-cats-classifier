@@ -45,23 +45,28 @@ def plot_training_history(history, output_path: Path) -> None:
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
     fig, axes = plt.subplots(1, 2, figsize=(12, 4))
-    axes[0].plot(history.history["accuracy"], label="train accuracy")
-    axes[0].plot(history.history["val_accuracy"], label="val accuracy")
+
+    axes[0].plot(history.history["accuracy"], label="Train Accuracy")
+    axes[0].plot(history.history["val_accuracy"], label="Validation Accuracy")
     axes[0].set_title("Accuracy")
     axes[0].set_xlabel("Epoch")
     axes[0].set_ylabel("Accuracy")
     axes[0].legend()
 
-    axes[1].plot(history.history["loss"], label="train loss")
-    axes[1].plot(history.history["val_loss"], label="val loss")
+    axes[1].plot(history.history["loss"], label="Train Loss")
+    axes[1].plot(history.history["val_loss"], label="Validation Loss")
     axes[1].set_title("Loss")
     axes[1].set_xlabel("Epoch")
     axes[1].set_ylabel("Loss")
     axes[1].legend()
 
     plt.tight_layout()
+
     plt.savefig(output_path)
-    plt.close(fig)
+
+    plt.show()      # Display the figure
+
+    plt.close(fig)  # Free memory afterwards
 
 
 def evaluate_model(model: tf.keras.Model, test_ds: tf.data.Dataset) -> dict[str, float]:
